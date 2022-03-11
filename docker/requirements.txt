@@ -1,0 +1,7 @@
+git+https://github.com/seanharr11/etlalchemy.git
+SQLAlchemy==1.3.24
+cx_Oracle==7.3
+mysql-connector-python
+mysql-connector
+PyMySQL
+MySQL-python
