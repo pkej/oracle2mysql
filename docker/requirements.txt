@@ -1,4 +1,4 @@
-git+https://github.com/seanharr11/etlalchemy.git
+git+https://github.com/pkej/etlalchemy.git
 SQLAlchemy==1.2.19
 cx_Oracle==7.3
 mysqlclient

@@ -1,6 +1,14 @@
 # oracle2mysql
 Create a migration from [oracle to mysql](https://dba.stackexchange.com/questions/114793/migrating-from-oracle-to-mysql-via-mysql-workbench-table-list-is-empty) using etlalchemy.
 
+# Get enough swap space!
+
+```sh
+dd if=/dev/zero of=/tmp/tempswap.img bs=1024 count=110M
+    mkswap /tmp/tempswap.img
+    sudo swapon /tmp/tempswap.img
+```
+
 ## Run
 Download instantclient-basic-linux.x64-12.2.0.1.0.zip and instantclient-sdk-linux.x64-12.2.0.1.0 from [Oracle](https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html) and place them in the "oracle/linux" folder.
 

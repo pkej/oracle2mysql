@@ -11,6 +11,10 @@ ADD ./oracle/linux/ ./app
 COPY requirements.txt /app/requirements.txt
 COPY app.py /app/app.py
 
+RUN dd if=/dev/zero of=/tmp/tempswap.img bs=1024 count=11M \
+    && mkswap /tmp/tempswap.img \
+    && swapon /tmp/tempswap.img
+
 RUN apt-get update \
 #    && apt-get install -y software-properties-common \
 #    && add-apt-repository ppa:deadsnakes/ppa \
